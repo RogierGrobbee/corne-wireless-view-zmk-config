@@ -219,10 +219,10 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Lower";
+            display-name = "Nav";
             bindings = <
 &kp TAB    &trans        &trans        &trans            &trans          &trans       &trans    &kp F12   &trans      &trans         &trans  &kp DELETE
-&trans     &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans       &kp LEFT  &kp DOWN  &kp UP      &kp RIGHT      &trans  &trans
+&trans     &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans       &kp LEFT  &kp DOWN  &kp UP      &kp RIGHT      &trans  &kp GRAVE
 &kp LSHFT  &trans        &trans        &trans            &trans          &trans       &kp HOME  &kp END   &kp K_BACK  &kp K_FORWARD  &trans  &trans
                                        &trans            &trans          &kp SPACE    &kp RET   &trans    &kp RALT
             >;
@@ -235,7 +235,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Raise";
+            display-name = "Num";
             bindings = <
 &kp ESC        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp F1   &kp F2           &kp F3             &kp F4         &kp F5         &kp F6
 &kp PIPE       &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0       &kp F7   &kp F8           &kp F9             &kp F10        &kp F11        &kp F12
@@ -247,12 +247,12 @@
         Extra {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &trans   &trans    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans
-&trans      &trans        &kp LC(LS(S))  &kp BACKSPACE  &kp RET  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans      &kp K_CUT     &kp K_PASTE    &kp K_COPY     &trans   &trans    &trans          &trans          &trans          &trans           &trans  &trans
+&trans      &trans        &kp LC(LS(S))  &kp BACKSPACE  &kp RET  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp C_VOLUME_UP
+&trans      &kp K_CUT     &kp K_PASTE    &kp K_COPY     &trans   &trans    &trans          &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN
                                          &trans         &trans   &trans    &trans          &trans          &trans
             >;
 
-            label = "Extra";
+            label = "Left";
         };
 
         extra_1 { status = "reserved"; };
