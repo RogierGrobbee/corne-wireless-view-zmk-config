@@ -265,7 +265,7 @@
             bindings = <
 &trans  &kp LC(LG(Q))  &trans         &trans         &email   &trans    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans
 &trans  &trans         &kp LC(LS(S))  &kp BACKSPACE  &kp RET  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp C_VOLUME_UP
-&trans  &kp K_CUT      &kp K_PASTE    &kp K_COPY     &trans   &trans    &trans          &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN
+&trans  &kp LC(X)      &kp LC(C)      &kp LC(V)      &trans   &trans    &trans          &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN
                                       &trans         &trans   &trans    &trans          &trans          &trans
             >;
 
