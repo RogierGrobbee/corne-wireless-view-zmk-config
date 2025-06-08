@@ -219,7 +219,7 @@
         jig: jig {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv -10 0 &wait 10000 &mmv 10 0 &wait 10000 &macro_jig>;
+            bindings = <&mmv -10 0 &wait 10000 &mmv 10 0 &wait 10000 &jig>;
             label = "JIG";
         };
     };
