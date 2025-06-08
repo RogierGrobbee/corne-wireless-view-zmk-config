@@ -215,6 +215,13 @@
             bindings = <&kp END &kp LS(HOME) &kp DEL>;
             label = "DEL_LINE";
         };
+
+        jig: jig {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv -10 0 &wait 10000 &mmv 10 0 &wait 10000 &macro_jig>;
+            label = "JIG";
+        };
     };
 
     keymap {
@@ -270,7 +277,7 @@
 
         Extra {
             bindings = <
-&trans         &kp LC(LG(Q))  &trans         &trans         &email     &trans    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans
+&trans         &kp LC(LG(Q))  &trans         &trans         &email     &trans    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &jig
 &kp LC(LG(S))  &kp LS(LC(F))  &kp LS(LC(S))  &kp BACKSPACE  &kp RET    &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp C_VOLUME_UP
 &trans         &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)  &trans    &trans          &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN
                                              &trans         &trans     &trans    &trans          &trans          &trans
