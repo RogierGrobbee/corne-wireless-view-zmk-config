@@ -109,7 +109,7 @@
             key-positions = <16 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         QA {
@@ -181,7 +181,7 @@
             key-positions = <3 15>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         GB {
@@ -189,7 +189,7 @@
             key-positions = <4 16>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         Pipe {
@@ -245,19 +245,19 @@
 
             display-name = "Nav";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp F11   &kp F12   &kp F5    &trans     &trans              &kp DELETE
-&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans              &kp GRAVE
-&trans  &trans        &trans        &kp HOME      &kp END       &trans       &trans    &trans    &mkp MB4  &mkp MB5   &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
-                                    &trans        &kp LEFT_ALT  &kp SPACE    &kp RET   &trans    &trans
+&del_line  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp F11   &kp F12   &kp F5    &trans     &trans              &kp DELETE
+&trans     &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans              &kp GRAVE
+&trans     &trans        &trans        &kp HOME      &kp END       &trans       &trans    &trans    &mkp MB4  &mkp MB5   &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
+                                       &trans        &kp LEFT_ALT  &kp SPACE    &kp RET   &trans    &trans
             >;
         };
 
         Extra {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans         &email   &trans    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans
-&trans      &trans  &trans  &kp BACKSPACE  &kp RET  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp C_VOLUME_UP
-&trans      &trans  &trans  &trans         &trans   &trans    &trans          &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN
-                            &trans         &trans   &trans    &trans          &trans          &trans
+&kp ESCAPE  &trans  &trans  &trans         &email   &kp C_VOLUME_UP    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &bt BT_CLR
+&trans      &trans  &trans  &kp BACKSPACE  &kp RET  &kp C_VOL_DN       &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &bt BT_SEL 0
+&trans      &trans  &trans  &trans         &trans   &kp K_MUTE         &trans          &trans          &trans          &trans           &trans  &bt BT_SEL 1
+                            &trans         &trans   &trans             &trans          &trans          &trans
             >;
 
             label = "Left";
