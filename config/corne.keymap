@@ -9,16 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mmv {
-    x-input-code = <1500>;
-    y-input-code = <1500>;
-};
-
-&msc {
-    x-input-code = <20>;
-    y-input-code = <20>;
-};
-
 / {
     behaviors {
         HMR: HMR {
