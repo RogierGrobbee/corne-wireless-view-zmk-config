@@ -292,7 +292,7 @@
             bindings = <
 &kp ESCAPE  &trans  &trans  &trans         &email   &kp C_VOLUME_UP    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &bt BT_CLR
 &del_line   &trans  &trans  &kp BACKSPACE  &kp RET  &kp C_VOL_DN       &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &bt BT_SEL 0
-&trans      &trans  &trans  &trans         &trans   &kp K_MUTE         &trans          &trans          &trans          &trans           &trans  &bt BT_SEL 1
+&trans      &trans  &trans  &trans         &trans   &kp C_MUTE         &trans          &trans          &trans          &trans           &trans  &bt BT_SEL 1
                             &trans         &trans   &trans             &trans          &trans          &trans
             >;
 
