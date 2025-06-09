@@ -219,7 +219,7 @@
         jig: jig {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv -10 0 &wait 10000 &mmv 10 0 &wait 10000 &jig>;
+            bindings = <&mmv &wait 10000 &mmv 10 0 &wait 10000 &jig>;
             label = "JIG";
         };
     };
@@ -236,10 +236,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB         &kp Q            &kp W            &kp E                &kp R              &kp T        &kp Y    &kp U              &kp I                 &kp O             &kp P                &kp BSPC
-&del_line       &HML LEFT_GUI A  &HML LEFT_ALT S  &HML LEFT_CONTROL D  &HML LEFT_SHIFT F  &kp G        &kp H    &HMR LEFT_SHIFT J  &HMR RIGHT_CONTROL K  &HMR RIGHT_ALT L  &HMR RIGHT_GUI SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp N    &kp M              &kp COMMA             &kp DOT           &kp FSLH             &kp RIGHT_SHIFT
-                                                  &mo 3                &mo 2              &kp SPACE    &kp RET  &mo 1              &mo 4
+&kp TAB         &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U  &kp I         &kp O    &kp P          &kp BSPC
+&kp LEFT_GUI    &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K         &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M  &kp COMMA     &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                              &kp LEFT_CONTROL  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp LEFT_ALT
             >;
         };
 
@@ -252,11 +252,22 @@
 
             display-name = "Nav";
             bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans       &trans    &kp F12   &trans    &trans     &trans              &kp DELETE
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans              &kp GRAVE
-&trans  &trans        &trans        &kp HOME          &kp END         &trans       &trans    &trans    &mkp MB4  &mkp MB5   &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
-                                    &trans            &trans          &kp SPACE    &kp RET   &trans    &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans    &kp F12   &trans    &trans     &trans              &kp DELETE
+&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans              &kp GRAVE
+&trans  &trans        &trans        &kp HOME      &kp END       &trans       &trans    &trans    &mkp MB4  &mkp MB5   &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)
+                                    &trans        &kp LEFT_ALT  &kp SPACE    &kp RET   &trans    &trans
             >;
+        };
+
+        Extra {
+            bindings = <
+&kp ESCAPE  &trans  &trans  &trans         &email   &trans    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans
+&trans      &trans  &trans  &kp BACKSPACE  &kp RET  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp C_VOLUME_UP
+&trans      &trans  &trans  &trans         &trans   &trans    &trans          &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN
+                            &trans         &trans   &trans    &trans          &trans          &trans
+            >;
+
+            label = "Left";
         };
 
         raise_layer {
@@ -273,17 +284,6 @@
 &kp COMMA   &kp SLASH     &kp MINUS     &kp PLUS      &kp EQUAL     &kp ASTERISK    &kp UNDERSCORE   &kp AMPERSAND         &kp PIPE               &kp DOLLAR        &kp PERCENT        &kp TILDE
                                         &trans        &trans        &kp SPACE       &kp RET          &trans                &trans
             >;
-        };
-
-        Extra {
-            bindings = <
-&trans         &kp LC(LG(Q))  &trans         &trans         &email     &trans    &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &jig
-&kp LC(LG(S))  &kp LS(LC(F))  &kp LS(LC(S))  &kp BACKSPACE  &kp RET    &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp C_VOLUME_UP
-&trans         &kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)  &trans    &trans          &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN
-                                             &trans         &trans     &trans    &trans          &trans          &trans
-            >;
-
-            label = "Left";
         };
 
         Function {
