@@ -130,7 +130,7 @@
 
         ED {
             bindings = <&kp HASH>;
-            key-positions = <16 28>;
+            key-positions = <5 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -138,7 +138,7 @@
 
         RF {
             bindings = <&kp DOLLAR>;
-            key-positions = <19 31>;
+            key-positions = <29 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -146,7 +146,7 @@
 
         TG {
             bindings = <&kp PERCENT>;
-            key-positions = <34 22>;
+            key-positions = <4 5>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -154,7 +154,7 @@
 
         AZ {
             bindings = <&kp CARET>;
-            key-positions = <13 25>;
+            key-positions = <28 29>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -170,7 +170,7 @@
 
         DC {
             bindings = <&kp ASTERISK>;
-            key-positions = <15 27>;
+            key-positions = <6 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -195,6 +195,30 @@
         Pipe {
             bindings = <&kp PIPE>;
             key-positions = <8 20>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <30 18>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+            layers = <0>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <30 31>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
