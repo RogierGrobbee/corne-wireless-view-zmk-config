@@ -40,7 +40,7 @@
     combos {
         compatible = "zmk,combos";
 
-        YH {
+        left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <15 16>;
             layers = <0>;
@@ -48,7 +48,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        UJ {
+        right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <19 20>;
             layers = <0>;
@@ -56,7 +56,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        HN {
+        left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <27 28>;
             layers = <0>;
@@ -64,7 +64,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        JM {
+        right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <31 32>;
             layers = <0>;
@@ -72,7 +72,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        IK {
+        left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
             layers = <0>;
@@ -80,7 +80,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        OL {
+        right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
             layers = <0>;
@@ -88,7 +88,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        K_COMMA {
+        less_than {
             bindings = <&kp LESS_THAN>;
             key-positions = <14 15>;
             layers = <0>;
@@ -96,7 +96,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        L_PERIOD {
+        greater_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <21 20>;
             layers = <0>;
@@ -104,7 +104,7 @@
             require-prior-idle-ms = <150>;
         };
 
-        FG {
+        equals {
             bindings = <&kp EQUAL>;
             key-positions = <16 17>;
             timeout-ms = <50>;
@@ -112,7 +112,7 @@
             layers = <0 1>;
         };
 
-        QA {
+        exclaimation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <19 18>;
             timeout-ms = <50>;
@@ -120,7 +120,7 @@
             layers = <0>;
         };
 
-        WS {
+        at_sign {
             bindings = <&kp AT_SIGN>;
             key-positions = <2 14>;
             timeout-ms = <50>;
@@ -128,7 +128,7 @@
             layers = <0>;
         };
 
-        ED {
+        hash {
             bindings = <&kp HASH>;
             key-positions = <5 17>;
             timeout-ms = <50>;
@@ -136,7 +136,7 @@
             layers = <0>;
         };
 
-        RF {
+        dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <29 17>;
             timeout-ms = <50>;
@@ -144,7 +144,7 @@
             layers = <0>;
         };
 
-        TG {
+        percent {
             bindings = <&kp PERCENT>;
             key-positions = <4 5>;
             timeout-ms = <50>;
@@ -152,15 +152,15 @@
             layers = <0>;
         };
 
-        AZ {
+        caret {
             bindings = <&kp CARET>;
-            key-positions = <28 29>;
+            key-positions = <28 16>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
 
-        SX {
+        ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <7 19>;
             timeout-ms = <50>;
@@ -168,7 +168,7 @@
             layers = <0>;
         };
 
-        DC {
+        astarisk {
             bindings = <&kp ASTERISK>;
             key-positions = <6 18>;
             timeout-ms = <50>;
@@ -176,7 +176,7 @@
             layers = <0>;
         };
 
-        FV {
+        minus {
             bindings = <&kp MINUS>;
             key-positions = <3 15>;
             timeout-ms = <50>;
@@ -184,7 +184,7 @@
             layers = <0 1>;
         };
 
-        GB {
+        plus {
             bindings = <&kp PLUS>;
             key-positions = <4 16>;
             timeout-ms = <50>;
@@ -192,7 +192,7 @@
             layers = <0 1>;
         };
 
-        Pipe {
+        pipe {
             bindings = <&kp PIPE>;
             key-positions = <8 20>;
             timeout-ms = <50>;
@@ -218,7 +218,7 @@
 
         tilde {
             bindings = <&kp TILDE>;
-            key-positions = <30 31>;
+            key-positions = <31 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
             layers = <0>;
